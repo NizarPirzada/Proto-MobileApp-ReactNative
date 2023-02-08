@@ -1,0 +1,96 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb-typescript",
+    //    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "@react-native-community",
+    "plugin:react/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "flowtype",
+    "import",
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint"
+  ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  // Most (if not all) of these rules are turned on for retarded people only
+  // Please do not hesitate to add to this list whenever you see a stupid elint error
+  // DO NOT try to fix the code
+  "rules": {
+    "react/jsx-props-no-spreading": "off",
+    "prettier/prettier": 1,
+    "no-template-curly-in-string": "off",
+    "react/jsx-filename-extension": "off",
+    "react/require-default-props": "off",
+    "@typescript-eslint/prefer-interface": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "@typescript-eslint/indent": "off",
+    "import/prefer-default-export": "off",
+    "no-nested-ternary": "off",
+    "no-plusplus": "off",
+    "no-shadow": "off",
+    "import/no-named-as-default": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": 0,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.test.js", "**/*.spec.js", "cypress/**/*"]
+      }
+    ],
+    "jsx-quotes": "off",
+    "no-trailing-spaces": "off",
+    "consistent-return": "off",
+    "react/prop-types": "off",
+    "func-names": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "react/jsx-one-expression-per-line": "off",
+
+    "import/named": "off",
+    "no-param-reassign": "off",
+    "react/jsx-wrap-multilines": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/jsx-curly-newline": "off",
+    // note you must disable the base rule as it can report incorrect errors
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": ["off"],
+    // This rule should be enabled for mentally challenged people only
+    "@typescript-eslint/no-shadow": "off",
+    // Who the fuck cares if we use shorthand expression?
+    // Even your parents don't care if your penis is short. Retarded rule
+    "object-shorthand": "off",
+    "react-native/no-inline-styles": "off",
+    "arrow-body-style": "off",
+    "semi": "off",
+    "react/no-unescaped-entities": [
+      "error",
+      {
+        "forbid": [">", "}"]
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".ts", ".jsx", ".tsx", ".d.ts"]
+      }
+    },
+    "import/extensions": [".js", ".ts", ".jsx", ".tsx", ".d.ts"]
+  }
+}

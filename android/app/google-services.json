@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "652592817671",
+    "project_id": "meecha-56190",
+    "storage_bucket": "meecha-56190.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:652592817671:android:2e1582f0b3646bd5a9eca2",
+        "android_client_info": {
+          "package_name": "com.meecha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "652592817671-o0cc0pr58cm44hgbi5irdoglfvpbp0iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcC93uCUc4hxwjuCOrkpwCQhPoCE0Hm8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "652592817671-o0cc0pr58cm44hgbi5irdoglfvpbp0iq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "652592817671-vft5v1jslmn50576t1s9ev6sjekuov0d.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.meecha.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
